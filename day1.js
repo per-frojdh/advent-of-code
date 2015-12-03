@@ -17,6 +17,12 @@ for (var i = 0; i < input.length; i++) {
     // Go down a floor.
     currentFloor--;
   }
+
+  if (currentFloor == -1) {
+    console.log("reached basement")
+    console.log(i + 1);
+    break;
+  }
 }
 
 // Write the output
