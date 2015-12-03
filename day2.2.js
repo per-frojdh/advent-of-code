@@ -27,7 +27,7 @@ input.forEach(function(present) {
 
   // Sort the measurements by value.
   measurements.sort(function(a, b) {
-    return a -b;
+    return a - b;
   });
 
   // Remove the last index (in this case, the highest value)

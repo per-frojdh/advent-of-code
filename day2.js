@@ -21,18 +21,12 @@ input.forEach(function(present) {
   // Save the areas according to formula in an array.
   box.push((2 * length * width), (2 * width * height), (2 * height * length));
 
-  // debug
-  //console.log(box);
-
   // Find the lowest number (which is the slack)
   var slack = Math.min.apply(null, box);
 
   // Add the slack divided by 2 (because it has 6 sides, and we're only
-  // 3 areas (multiplied by two)
+  // calculating 3 areas (multiplied by two)
   total += slack / 2;
-
-  // debug
-  //console.log(slack);
 
   // Loop through each index and add to total.
   box.map(function(item) {
