@@ -17,7 +17,6 @@ input.forEach(function(present) {
 
   // Create an array
   var box = [];
-  var ribbon = [];
 
   // Save the areas according to formula in an array.
   box.push((2 * length * width), (2 * width * height), (2 * height * length));
