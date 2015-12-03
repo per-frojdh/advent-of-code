@@ -37,14 +37,5 @@ for (var i = 0; i < input.length; i++) {
     map[shorthand] = 1;
   }
 }
-
-var highest = 0;
-for (var key in map) {
-  console.log(map[key]);
-  if (map[key] > highest) {
-    highest = map[key];
-  }
-}
 console.log(Object.keys(map).length);
-console.log(highest);
 console.log(position);
